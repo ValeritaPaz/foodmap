@@ -7,5 +7,3 @@ FoodMap es un sitio web responsive que permite al usuario filtrar restaurantes s
 ## Desarrllado para
 
 [Laboratoria](http://laboratoria.la)
-
-Common Core
