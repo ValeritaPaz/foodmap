@@ -1,0 +1,56 @@
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: #2f2f2f;
+}
+.logo {
+  position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: #2f2f2f;
+}
+.vanish {
+  padding-top: 50%;
+}
+.brand {
+	color: #d6781a;
+	text-align: center;
+}
+.bar-input {
+	cursor: pointer;
+}
+.loading {
+  width: 20%;
+  margin-top: 10%;
+}
+.input-group-addon {
+	background-color: #2f2f2f;
+	color: #dfdfdf;
+}
+.margins {
+	margin: 3% 0;
+}
+.less-padd {
+	padding: 0 1%;
+}
+.margin-bottom {
+	margin-bottom: 10%;
+}
+img.zoom {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+img.zoom:hover{
+  opacity: 0.6;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}

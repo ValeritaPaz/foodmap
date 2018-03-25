@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>FOOD MAP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!--SECCION QUE DESAPARECE-->
+	<section class="logo">
+   <h1 class="brand vanish">Foodmap</h1>
+   <img src="assets/images/loading.gif" alt="" class="loading center-block img-responsive">
+  </section>
+
+  <!--SECCION HOME PAGE-->
+  <div class="home-page">
+    <div class="container">
+
+      <!--DIV EN DONDE APARECE EL LOGO-->
+      <header>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+           <h1 class="brand page-header">Foodmap</h1>
+          </div>
+        </div>
+      </header>
+      
+      <!--DIV DONDE APARECE EL MAPA-->
+      <section>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13317.294452112967!2d-70.64507729894459!3d-33.44087443590952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes+en+santiago!5e0!3m2!1ses!2scl!4v1513113759319" frameborder="0" style="border:0" allowfullscreen class="center-block"></iframe>
+          </div>
+        </div>
+      </section>
+      
+      <!--DIV DEL TITULO DEL INPUT DE BUSQUEDA-->
+      <section>
+        <div class="row">
+          <div class="col-sm-12 col-xs-12">
+            <h3 class="brand">ESCOGE ENTRE</h3>
+            <p class="brand">Arabe - Asiática - Cafetería - Chilena - Italiana - Mexicana - Peruana</p>
+          </div>
+        </div>
+      </section>
+      
+      <!--DIV DEL DROPDOWN DE BUSQUEDA-->
+      <section>
+        <div class="row">        
+          <div class="col-sm-12 col-xs-12">
+            <div class="input-group bar-input">
+              <input class="form-control filter" id="myInput" type="text" placeholder="Filtrar Restaurantes..">
+              <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--DIV DE FOTOS-->
+      <section>
+        <div class="img-restaurant" id="myList">
+          <div class="container margin-bottom">
+            <div class="row margins">
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/spagetti.jpg" alt="" class="zoom img-responsive center-block italiana" data-toggle="modal" data-target="#restaurante-info" data-name="Golfinni" data-message="El mejor restaurante de pastas" data-address="Camino Viejo #123" data-cost="Entre $2.000 y $7.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Italiana</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/crepes.jpg" alt="" class="zoom img-responsive center-block cafeteria" data-toggle="modal" data-target="#restaurante-info" data-name="Break Point" data-message="Líderes en café y postres" data-address="Avenida Siempreviva #634" data-cost="Entre $1.500 y $8.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Cafetería</p> 
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/burrito.jpg" alt="" class="zoom img-responsive center-block mexicana" data-toggle="modal" data-target="#restaurante-info" data-name="Or@le" data-message="De México con amor" data-address="Calle s/n Esquina Los Brutos" data-cost="Entre $3.500 y $8.500">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Mexicana</p>
+              </div>
+            </div>
+            <div class="row margins">
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/tacos.jpg" alt="" class="zoom img-responsive center-block mexicana" data-toggle="modal" data-target="#restaurante-info" data-name="Taquitos Way" data-message="A toda madre" data-address="El Carmen #1080" data-cost="Entre $2.000 y $10.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Mexicana</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/sushi.jpg" alt="" class="zoom img-responsive center-block asiatica" data-toggle="modal" data-target="#restaurante-info" data-name="Sr. Miyagi" data-message="Enrollando tu sabor" data-address="Rinconada #576" data-cost="Entre $5.000 y $17.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Asiática</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/lasagna.jpg" alt="" class="zoom img-responsive center-block italiana" data-toggle="modal" data-target="#restaurante-info" data-name="Buongiorno" data-message="Tutto Mangare" data-address="Recoleta #899 Esquina Los Perales" data-cost="Entre $8.000 y $20.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Italiana</p>
+              </div>
+            </div>
+            <div class="row margins">
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/ceviche.jpg" alt="" class="zoom img-responsive center-block peruana" data-toggle="modal" data-target="#restaurante-info" data-name="Amanitas" data-message="Pasión por el mar" data-address="Camino del Inca s/n" data-cost="Entre $4.000 y $13.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Peruana</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/chaufan.jpg" alt="" class="zoom img-responsive center-block asiatica" data-toggle="modal" data-target="#restaurante-info" data-name="Shifu'd" data-message="Pon a prueba tus sentidos" data-address="Av. Providencia #1975" data-cost="Entre $7.000 y $24.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Asiática</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/salteado.jpg" alt="" class="zoom img-responsive center-block peruana" data-toggle="modal" data-target="#restaurante-info" data-name="PerúPassion" data-message="Mejor fusión" data-address="Hogwarts #3427" data-cost="Entre $10.000 y $30.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Peruana</p>
+              </div>
+            </div>
+            <div class="row margins">
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/arabe.jpg" alt="" class="zoom img-responsive center-block arabe" data-toggle="modal" data-target="#restaurante-info" data-name="Al Jazeera" data-message="Lo mejor del Oriente Medio" data-address="Huérfanos #1385" data-cost="Entre $3.500 y $15.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Arabe</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/cazuela.jpg" alt="" class="zoom img-responsive center-block chilena" data-toggle="modal" data-target="#restaurante-info" data-name="Doña Margarita" data-message="Comida casera en un sólo lugar" data-address="Juan Concha #55" data-cost="Entre $2.500 y $9.500">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Chilena</p>
+              </div>
+              <div class="col-sm-4 col-xs-4 less-padd">
+                <img src="assets/images/hotcake.jpg" alt="" class="zoom img-responsive center-block cafeteria" data-toggle="modal" data-target="#restaurante-info" data-name="C.H.O.P" data-message="Chilean House of Pancakes" data-address="Tierra de Oz con Calle Narnia" data-cost="Entre $2.000 y $9.000">
+                <p class="hidden-lg hidden-md hidden-sm hidden-xs">Cafetería</p>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </section>
+      
+      <!--MODAL PARA INFO DE LOS RESTAURANTES-->
+      <section>
+        <div id="restaurante-info" class="modal fade" role="dialog">
+         <div class="modal-dialog">        
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h2 class="text-center"><strong class="modal-title"></strong></h2>
+               <p class="text-center"><em class="message"></em></p>
+               <div class="row text-center" style="color: #d6781a">
+                 <div class="col-sm-12 col-xs-12">
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                 </div>
+               </div>
+             </div>
+             <div class="modal-body">
+               <div class="row margins">
+                 <div class="col-sm-12 col-xs-12">
+                  <iframe class="smallMap center-block img-responsive" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53283.94709611709!2d-70.66674865722692!3d-33.416812222888936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes+en+santiago!5e0!3m2!1ses!2scl!4v1521425518382"></iframe>   
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-sm-6 col-xs-6 address text-right"></div>
+                 <div class="col-sm-6 col-xs-6 cost text-left"></div>
+               </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default order" data-dismiss="modal">Pedir ahora</button>
+             </div>
+           </div>        
+         </div>
+        </div>
+      </section>      
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/7e3056ac5b.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
