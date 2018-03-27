@@ -12,7 +12,7 @@ body {
     background-color: #2f2f2f;
 }
 .vanish {
-  padding-top: 50%;
+  padding-top: 20%;
 }
 .brand {
 	color: #d6781a;
@@ -22,8 +22,8 @@ body {
 	cursor: pointer;
 }
 .loading {
-  width: 20%;
-  margin-top: 10%;
+  width: 10%;
+
 }
 .input-group-addon {
 	background-color: #2f2f2f;
